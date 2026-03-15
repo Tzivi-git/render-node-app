@@ -14,7 +14,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // השתמשנו ב-sdk כי כך הגדרנו בשורה 2
-sdk.auth('rnd_6LsipuKq7SwwfyW0gxtz4k8bnapn'); 
+sdk.auth(process.env.RENDER_API_KEY); 
 
 app.get('/services', (req, res) => {
   sdk.listServices({includePreviews: 'true', limit: '20'})
