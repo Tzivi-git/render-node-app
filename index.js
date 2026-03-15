@@ -1,4 +1,3 @@
-import renderApi from '@api/render-api';
 
 const express = require('express');
 const sdk = require('api')('@render-api/v1.0#dnzkv1ulkw9q3j6');
